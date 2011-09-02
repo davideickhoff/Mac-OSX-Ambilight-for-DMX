@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63F3327E141114620077A24C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F3327D141114620077A24C /* Cocoa.framework */; };
+		63F33288141114620077A24C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63F33286141114620077A24C /* InfoPlist.strings */; };
+		63F3328A141114620077A24C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F33289141114620077A24C /* main.m */; };
+		63F3328E141114620077A24C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 63F3328C141114620077A24C /* Credits.rtf */; };
+		63F33291141114620077A24C /* AmbilightAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F33290141114620077A24C /* AmbilightAppDelegate.m */; };
+		63F33294141114620077A24C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F33292141114620077A24C /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		63F33279141114620077A24C /* Ambilight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ambilight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F3327D141114620077A24C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		63F33280141114620077A24C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		63F33281141114620077A24C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		63F33282141114620077A24C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63F33285141114620077A24C /* Ambilight-Info.plist */ = {isa = PBXFileReference; path = "Ambilight-Info.plist"; sourceTree = "<group>"; };
+		63F33287141114620077A24C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63F33289141114620077A24C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63F3328B141114620077A24C /* Ambilight-Prefix.pch */ = {isa = PBXFileReference; path = "Ambilight-Prefix.pch"; sourceTree = "<group>"; };
+		63F3328D141114620077A24C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		63F3328F141114620077A24C /* AmbilightAppDelegate.h */ = {isa = PBXFileReference; path = AmbilightAppDelegate.h; sourceTree = "<group>"; };
+		63F33290141114620077A24C /* AmbilightAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbilightAppDelegate.m; sourceTree = "<group>"; };
+		63F33293141114620077A24C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63F33276141114620077A24C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F3327E141114620077A24C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63F3326E141114620077A24C = {
+			isa = PBXGroup;
+			children = (
+				63F33283141114620077A24C /* Ambilight */,
+				63F3327C141114620077A24C /* Frameworks */,
+				63F3327A141114620077A24C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63F3327A141114620077A24C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63F33279141114620077A24C /* Ambilight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63F3327C141114620077A24C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63F3327D141114620077A24C /* Cocoa.framework */,
+				63F3327F141114620077A24C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63F3327F141114620077A24C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63F33280141114620077A24C /* AppKit.framework */,
+				63F33281141114620077A24C /* CoreData.framework */,
+				63F33282141114620077A24C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		63F33283141114620077A24C /* Ambilight */ = {
+			isa = PBXGroup;
+			children = (
+				63F3328F141114620077A24C /* AmbilightAppDelegate.h */,
+				63F33290141114620077A24C /* AmbilightAppDelegate.m */,
+				63F33292141114620077A24C /* MainMenu.xib */,
+				63F33284141114620077A24C /* Supporting Files */,
+			);
+			path = Ambilight;
+			sourceTree = "<group>";
+		};
+		63F33284141114620077A24C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63F33285141114620077A24C /* Ambilight-Info.plist */,
+				63F33286141114620077A24C /* InfoPlist.strings */,
+				63F33289141114620077A24C /* main.m */,
+				63F3328B141114620077A24C /* Ambilight-Prefix.pch */,
+				63F3328C141114620077A24C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63F33278141114620077A24C /* Ambilight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63F33297141114620077A24C /* Build configuration list for PBXNativeTarget "Ambilight" */;
+			buildPhases = (
+				63F33275141114620077A24C /* Sources */,
+				63F33276141114620077A24C /* Frameworks */,
+				63F33277141114620077A24C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ambilight;
+			productName = Ambilight;
+			productReference = 63F33279141114620077A24C /* Ambilight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63F33270141114620077A24C /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 63F33273141114620077A24C /* Build configuration list for PBXProject "Ambilight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63F3326E141114620077A24C;
+			productRefGroup = 63F3327A141114620077A24C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63F33278141114620077A24C /* Ambilight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63F33277141114620077A24C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F33288141114620077A24C /* InfoPlist.strings in Resources */,
+				63F3328E141114620077A24C /* Credits.rtf in Resources */,
+				63F33294141114620077A24C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63F33275141114620077A24C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63F3328A141114620077A24C /* main.m in Sources */,
+				63F33291141114620077A24C /* AmbilightAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		63F33286141114620077A24C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F33287141114620077A24C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		63F3328C141114620077A24C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F3328D141114620077A24C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		63F33292141114620077A24C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63F33293141114620077A24C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63F33295141114620077A24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		63F33296141114620077A24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		63F33298141114620077A24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ambilight/Ambilight-Prefix.pch";
+				INFOPLIST_FILE = "Ambilight/Ambilight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63F33299141114620077A24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Ambilight/Ambilight-Prefix.pch";
+				INFOPLIST_FILE = "Ambilight/Ambilight-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63F33273141114620077A24C /* Build configuration list for PBXProject "Ambilight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F33295141114620077A24C /* Debug */,
+				63F33296141114620077A24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63F33297141114620077A24C /* Build configuration list for PBXNativeTarget "Ambilight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63F33298141114620077A24C /* Debug */,
+				63F33299141114620077A24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63F33270141114620077A24C /* Project object */;
+}
