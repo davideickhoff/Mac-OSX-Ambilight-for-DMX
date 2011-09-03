@@ -7,11 +7,27 @@
 //
 
 #import "AmbilightAppDelegate.h"
-#define  DMAX(a,b,c)  ( ((a) > (b)) ? \
-((a) > (c) ?  (a) : (c)) : \
-((b) > (c) ? (b) : (c)) )
 
+// Private properties
+@interface AmbilightAppDelegate ()
+{
+    NSColor *rgbColor;
+    NSColor *hsbcolor;
+    
+    CGFloat red;
+    CGFloat green;
+    CGFloat blue;
+    
+    CGFloat sat;
+    CGFloat bright;
+    CGFloat hue;
+    
+    int scans;
+    
+    int log[32];
+}
 
+@end
 
 @implementation AmbilightAppDelegate
 
@@ -21,6 +37,7 @@
 @synthesize timer, displays, currentScreen;
 @synthesize connection, label;
 @synthesize resolutionDiv, minBright, brightFac, satFac, updateFrequency;
+@synthesize useLog;
 
 - (IBAction)changeScreen:(id)sender 
 {
@@ -71,6 +88,10 @@
     self.brightFac = 2.7;
     self.satFac = 1.4;
     self.resolutionDiv = 10;
+    self.useLog = FALSE;
+    
+    //log[32] = {0 , 1 , 2 , 2 , 2 , 3 , 3 , 4 , 5 , 6 , 7 , 8 , 10 , 11 , 13 , 16 , 19 , 23 , 27 , 32 , 38 , 45 , 54 , 64 , 76 , 91 , 108 , 128 , 152 , 181 , 215 , 255};
+
     
     self.timer = [NSTimer scheduledTimerWithTimeInterval:self.updateFrequency/1000
                                                   target:self
@@ -122,39 +143,33 @@
     CGSize frameSize = CGSizeMake(currentScreen.resolution.width / self.resolutionDiv, currentScreen.resolution.height / self.resolutionDiv);
 
     CGImageRef image = CGDisplayCreateImageForRect(self.currentScreen.displayId, CGRectMake(0, 0, currentScreen.resolution.width, currentScreen.resolution.height));
-    
     NSBitmapImageRep *bitmap = [[NSBitmapImageRep alloc] initWithCGImage:image];
     CGImageRelease(image);
-    
-    NSColor *color;
-    
-    CGFloat red = 0.0;
-    CGFloat green = 0.0;
-    CGFloat blue = 0.0;
-    
-    int scans = 0;
-
+        
+    red = 0.0;
+    green = 0.0;
+    blue = 0.0;
+    scans = 0;
     
     for (int x=0; x<currentScreen.resolution.width; x=x+frameSize.width) {
         for (int y=0; y<currentScreen.resolution.height; y=y+frameSize.height) {
-            color = [bitmap colorAtX:x y:y];   
-            blue += [color blueComponent];
-            red += [color redComponent];
-            green += [color greenComponent];
+            rgbColor = [bitmap colorAtX:x y:y];   
+            blue += [rgbColor blueComponent];
+            red += [rgbColor redComponent];
+            green += [rgbColor greenComponent];
             scans++;
         }
     }
-
     
     red /= scans;
     green /= scans;
     blue /= scans;
     
-    NSColor *hsbcolor = [NSColor colorWithDeviceRed:red green:green blue:blue alpha:1.0];
+    hsbcolor = [NSColor colorWithDeviceRed:red green:green blue:blue alpha:1.0];
     
-    CGFloat hue = [hsbcolor hueComponent];
-    CGFloat sat = [hsbcolor saturationComponent];
-    CGFloat bright = [hsbcolor brightnessComponent];
+    hue = [hsbcolor hueComponent];
+    sat = [hsbcolor saturationComponent];
+    bright = [hsbcolor brightnessComponent];
     
     
     sat *= self.satFac;
@@ -167,28 +182,18 @@
     //NSLog(@"hue %0.2f sat %0.2f bright %0.2f", hue, sat, brigth);
 
     
-    NSColor *adjustedColor = [NSColor colorWithDeviceHue:hue saturation:sat brightness:bright alpha:1.0];
-    
-   
-    int log[32] = {0 , 1 , 2 , 2 , 2 , 3 , 3 , 4 , 5 , 6 , 7 , 8 , 10 , 11 , 13 , 16 , 19 , 23 , 27 , 32 , 38 , 45 , 54 , 64 , 76 , 91 , 108 , 128 , 152 , 181 , 215 , 255};
-    
+    rgbColor = [NSColor colorWithDeviceHue:hue saturation:sat brightness:bright alpha:1.0];
     
     [bitmap release];
     
-    [colorView changeColor:adjustedColor];
+    [colorView changeColor:rgbColor];
     
-    [connection sendCommand:[NSString stringWithFormat:@"dmx set 1 0 %i %i %i", (int)([adjustedColor redComponent]*255), (int)([adjustedColor greenComponent]*255), (int)([adjustedColor blueComponent]*255)]];
-//    [connection sendCommand:[NSString stringWithFormat:@"dmx set 1 0 %i %i %i", log[(int)(red*32)], log[(int)(green*32)], log[(int)(blue*32)]]];
-
-    // NSLog(@"%@", [NSString stringWithFormat:@"dmx set 1 0  %0.0f  %0.0f  %0.0f", red*255, green*250, blue*255]);
-  //  [connection sendCommand:[NSString stringWithFormat:@"dmx set 1 1 %i", green*255]];
-  //  [connection sendCommand:[NSString stringWithFormat:@"dmx set 1 2 %i", blue*255]];
-    
-        //[connection performSelector:@selector(sendCommand:) withObject:[NSString stringWithFormat:@"dmx set 1 %i %i", i, (int)(components[i]*255)] afterDelay:i*0.2];  
-        
-//    [label.cell setTitle:[NSString stringWithFormat:@"Farbe: %0.5f %0.5f %0.5f", [color blueComponent], color.redComponent, color.greenComponent]];
-    [label.cell setTitle:[NSString stringWithFormat:@"R: %i G: %i B: %i", (int)([adjustedColor redComponent]*255), (int)([adjustedColor greenComponent]*255), (int)([adjustedColor blueComponent]*255)]];
-
+    if (useLog) {
+        [connection sendCommand:[NSString stringWithFormat:@"dmx set 1 0 %i %i %i", log[(int)([rgbColor redComponent]*32)], log[(int)([rgbColor greenComponent]*32)], log[(int)([rgbColor blueComponent]*32)]]];
+    } else {
+        [connection sendCommand:[NSString stringWithFormat:@"dmx set 1 0 %i %i %i", (int)([rgbColor redComponent]*255), (int)([rgbColor greenComponent]*255), (int)([rgbColor blueComponent]*255)]];
+        //[label.cell setTitle:[NSString stringWithFormat:@"R: %i G: %i B: %i", (int)([rgbColor redComponent]*255), (int)([rgbColor greenComponent]*255), (int)([rgbColor blueComponent]*255)]];
+    }
 }
 
 

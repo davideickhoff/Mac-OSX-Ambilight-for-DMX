@@ -37,6 +37,7 @@
     CGFloat brightFac;
     CGFloat satFac;
     
+    BOOL useLog;
     
     NetIOConnection *connection;
     NSTextField* label;
@@ -68,6 +69,8 @@
 @property (assign) CGFloat minBright;
 @property (assign) CGFloat brightFac;
 @property (assign) CGFloat satFac;
+
+@property (assign) BOOL useLog;
 
 @property (nonatomic, retain) NetIOConnection *connection;
 @property (nonatomic, retain) IBOutlet NSTextField* label;
