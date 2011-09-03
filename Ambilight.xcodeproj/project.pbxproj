@@ -13,6 +13,11 @@
 		63F3328E141114620077A24C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 63F3328C141114620077A24C /* Credits.rtf */; };
 		63F33291141114620077A24C /* AmbilightAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F33290141114620077A24C /* AmbilightAppDelegate.m */; };
 		63F33294141114620077A24C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F33292141114620077A24C /* MainMenu.xib */; };
+		63F332A414112F870077A24C /* Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F332A314112F870077A24C /* Screen.m */; };
+		63F332AA14113FCB0077A24C /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F332A714113FCB0077A24C /* AsyncSocket.m */; };
+		63F332AB14113FCB0077A24C /* NetIOConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F332A914113FCB0077A24C /* NetIOConnection.m */; };
+		63F332BE14124AF90077A24C /* ColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F332BD14124AF90077A24C /* ColorView.m */; };
+		63F332C11412605A0077A24C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63F332C01412605A0077A24C /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,14 +26,23 @@
 		63F33280141114620077A24C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		63F33281141114620077A24C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		63F33282141114620077A24C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		63F33285141114620077A24C /* Ambilight-Info.plist */ = {isa = PBXFileReference; path = "Ambilight-Info.plist"; sourceTree = "<group>"; };
+		63F33285141114620077A24C /* Ambilight-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ambilight-Info.plist"; sourceTree = "<group>"; };
 		63F33287141114620077A24C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63F33289141114620077A24C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		63F3328B141114620077A24C /* Ambilight-Prefix.pch */ = {isa = PBXFileReference; path = "Ambilight-Prefix.pch"; sourceTree = "<group>"; };
+		63F3328B141114620077A24C /* Ambilight-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ambilight-Prefix.pch"; sourceTree = "<group>"; };
 		63F3328D141114620077A24C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		63F3328F141114620077A24C /* AmbilightAppDelegate.h */ = {isa = PBXFileReference; path = AmbilightAppDelegate.h; sourceTree = "<group>"; };
+		63F3328F141114620077A24C /* AmbilightAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmbilightAppDelegate.h; sourceTree = "<group>"; };
 		63F33290141114620077A24C /* AmbilightAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AmbilightAppDelegate.m; sourceTree = "<group>"; };
 		63F33293141114620077A24C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		63F332A214112F870077A24C /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		63F332A314112F870077A24C /* Screen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Screen.m; sourceTree = "<group>"; };
+		63F332A614113FCA0077A24C /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
+		63F332A714113FCB0077A24C /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
+		63F332A814113FCB0077A24C /* NetIOConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetIOConnection.h; sourceTree = "<group>"; };
+		63F332A914113FCB0077A24C /* NetIOConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetIOConnection.m; sourceTree = "<group>"; };
+		63F332BC14124AF90077A24C /* ColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorView.h; sourceTree = "<group>"; };
+		63F332BD14124AF90077A24C /* ColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorView.m; sourceTree = "<group>"; };
+		63F332C01412605A0077A24C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +60,7 @@
 		63F3326E141114620077A24C = {
 			isa = PBXGroup;
 			children = (
+				63F332C01412605A0077A24C /* icon.icns */,
 				63F33283141114620077A24C /* Ambilight */,
 				63F3327C141114620077A24C /* Frameworks */,
 				63F3327A141114620077A24C /* Products */,
@@ -82,9 +97,17 @@
 		63F33283141114620077A24C /* Ambilight */ = {
 			isa = PBXGroup;
 			children = (
+				63F332A614113FCA0077A24C /* AsyncSocket.h */,
+				63F332A714113FCB0077A24C /* AsyncSocket.m */,
+				63F332A814113FCB0077A24C /* NetIOConnection.h */,
+				63F332A914113FCB0077A24C /* NetIOConnection.m */,
 				63F3328F141114620077A24C /* AmbilightAppDelegate.h */,
 				63F33290141114620077A24C /* AmbilightAppDelegate.m */,
 				63F33292141114620077A24C /* MainMenu.xib */,
+				63F332A214112F870077A24C /* Screen.h */,
+				63F332A314112F870077A24C /* Screen.m */,
+				63F332BC14124AF90077A24C /* ColorView.h */,
+				63F332BD14124AF90077A24C /* ColorView.m */,
 				63F33284141114620077A24C /* Supporting Files */,
 			);
 			path = Ambilight;
@@ -152,6 +175,7 @@
 				63F33288141114620077A24C /* InfoPlist.strings in Resources */,
 				63F3328E141114620077A24C /* Credits.rtf in Resources */,
 				63F33294141114620077A24C /* MainMenu.xib in Resources */,
+				63F332C11412605A0077A24C /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +188,10 @@
 			files = (
 				63F3328A141114620077A24C /* main.m in Sources */,
 				63F33291141114620077A24C /* AmbilightAppDelegate.m in Sources */,
+				63F332A414112F870077A24C /* Screen.m in Sources */,
+				63F332AA14113FCB0077A24C /* AsyncSocket.m in Sources */,
+				63F332AB14113FCB0077A24C /* NetIOConnection.m in Sources */,
+				63F332BE14124AF90077A24C /* ColorView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +311,7 @@
 				63F33299141114620077A24C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
