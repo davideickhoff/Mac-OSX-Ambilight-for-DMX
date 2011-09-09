@@ -1,0 +1,6 @@
+This application is used to create an ambiglight (like on Philips TVs) with RGB LEDs connected via DMX. 
+
+Currently the app is used with an AVR-NetIO Board with Ethersex installed.
+
+TODO:
+- add ArtNet support
