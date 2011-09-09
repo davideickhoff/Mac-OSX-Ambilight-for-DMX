@@ -27,6 +27,13 @@
     NSTextField *satFactorTextField;
     ColorView *colorView;
     
+    NSSlider *redSlider;
+    NSSlider *greebSlider;
+    NSSlider *blueSlider;
+    NSTextField *redLabel;
+    NSTextField *greenLabel;
+    NSTextField *blueLabel;
+
     NSTimer* timer;    
     NSMutableArray *displays;
     Screen *currentScreen;
@@ -36,6 +43,9 @@
     CGFloat minBright;
     CGFloat brightFac;
     CGFloat satFac;
+    int redAdjust;
+    int greenAdjust;
+    int blueAdjust;
     
     BOOL useLog;
     
@@ -60,6 +70,13 @@
 @property (nonatomic, retain) IBOutlet NSTextField *satFactorTextField;
 @property (nonatomic, retain) IBOutlet ColorView *colorView;
 
+@property (nonatomic, retain) IBOutlet NSSlider *redSlider;
+@property (nonatomic, retain) IBOutlet NSSlider *greebSlider;
+@property (nonatomic, retain) IBOutlet NSSlider *blueSlider;
+@property (nonatomic, retain) IBOutlet NSTextField *redLabel;
+@property (nonatomic, retain) IBOutlet NSTextField *greenLabel;
+@property (nonatomic, retain) IBOutlet NSTextField *blueLabel;
+
 @property (nonatomic, retain) NSTimer *timer;
 @property (nonatomic, retain) NSMutableArray* displays;
 @property (nonatomic, retain) Screen *currentScreen;
@@ -69,6 +86,9 @@
 @property (assign) CGFloat minBright;
 @property (assign) CGFloat brightFac;
 @property (assign) CGFloat satFac;
+@property (assign) int redAdjust;
+@property (assign) int greenAdjust;
+@property (assign) int blueAdjust;
 
 @property (assign) BOOL useLog;
 
@@ -80,5 +100,6 @@
 - (IBAction)changeScanResolution:(id)sender;
 - (IBAction)changeMinBrightness:(id)sender;
 - (IBAction)changeBrightFactor:(id)sender;
+- (IBAction)adjustOutput:(id)sender;
 
 @end
