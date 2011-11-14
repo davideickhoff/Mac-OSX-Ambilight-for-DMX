@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6344BE49146FF059005A0D4D /* artnet.c in Sources */ = {isa = PBXBuildFile; fileRef = 6344BE3C146FF059005A0D4D /* artnet.c */; };
+		6344BE4A146FF059005A0D4D /* misc.c in Sources */ = {isa = PBXBuildFile; fileRef = 6344BE40146FF059005A0D4D /* misc.c */; };
+		6344BE4B146FF059005A0D4D /* network.c in Sources */ = {isa = PBXBuildFile; fileRef = 6344BE42146FF059005A0D4D /* network.c */; };
+		6344BE4C146FF059005A0D4D /* receive.c in Sources */ = {isa = PBXBuildFile; fileRef = 6344BE45146FF059005A0D4D /* receive.c */; };
+		6344BE4D146FF059005A0D4D /* tod.c in Sources */ = {isa = PBXBuildFile; fileRef = 6344BE46146FF059005A0D4D /* tod.c */; };
+		6344BE4E146FF059005A0D4D /* transmit.c in Sources */ = {isa = PBXBuildFile; fileRef = 6344BE48146FF059005A0D4D /* transmit.c */; };
+		6344BE5014701342005A0D4D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6344BE4F14701342005A0D4D /* AVFoundation.framework */; };
 		63F3327E141114620077A24C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F3327D141114620077A24C /* Cocoa.framework */; };
 		63F33288141114620077A24C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63F33286141114620077A24C /* InfoPlist.strings */; };
 		63F3328A141114620077A24C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F33289141114620077A24C /* main.m */; };
@@ -15,12 +22,25 @@
 		63F33294141114620077A24C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63F33292141114620077A24C /* MainMenu.xib */; };
 		63F332A414112F870077A24C /* Screen.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F332A314112F870077A24C /* Screen.m */; };
 		63F332AA14113FCB0077A24C /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F332A714113FCB0077A24C /* AsyncSocket.m */; };
-		63F332AB14113FCB0077A24C /* NetIOConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F332A914113FCB0077A24C /* NetIOConnection.m */; };
 		63F332BE14124AF90077A24C /* ColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F332BD14124AF90077A24C /* ColorView.m */; };
 		63F332C11412605A0077A24C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 63F332C01412605A0077A24C /* icon.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6344BE3C146FF059005A0D4D /* artnet.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = artnet.c; sourceTree = "<group>"; };
+		6344BE3D146FF059005A0D4D /* artnet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = artnet.h; sourceTree = "<group>"; };
+		6344BE3E146FF059005A0D4D /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		6344BE3F146FF059005A0D4D /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		6344BE40146FF059005A0D4D /* misc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = misc.c; sourceTree = "<group>"; };
+		6344BE41146FF059005A0D4D /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		6344BE42146FF059005A0D4D /* network.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = network.c; sourceTree = "<group>"; };
+		6344BE43146FF059005A0D4D /* packets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = packets.h; sourceTree = "<group>"; };
+		6344BE44146FF059005A0D4D /* private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = private.h; sourceTree = "<group>"; };
+		6344BE45146FF059005A0D4D /* receive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = receive.c; sourceTree = "<group>"; };
+		6344BE46146FF059005A0D4D /* tod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tod.c; sourceTree = "<group>"; };
+		6344BE47146FF059005A0D4D /* tod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tod.h; sourceTree = "<group>"; };
+		6344BE48146FF059005A0D4D /* transmit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = transmit.c; sourceTree = "<group>"; };
+		6344BE4F14701342005A0D4D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		63F33279141114620077A24C /* Ambilight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ambilight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F3327D141114620077A24C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		63F33280141114620077A24C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -38,8 +58,6 @@
 		63F332A314112F870077A24C /* Screen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Screen.m; sourceTree = "<group>"; };
 		63F332A614113FCA0077A24C /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
 		63F332A714113FCB0077A24C /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
-		63F332A814113FCB0077A24C /* NetIOConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetIOConnection.h; sourceTree = "<group>"; };
-		63F332A914113FCB0077A24C /* NetIOConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetIOConnection.m; sourceTree = "<group>"; };
 		63F332BC14124AF90077A24C /* ColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorView.h; sourceTree = "<group>"; };
 		63F332BD14124AF90077A24C /* ColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorView.m; sourceTree = "<group>"; };
 		63F332C01412605A0077A24C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
@@ -50,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6344BE5014701342005A0D4D /* AVFoundation.framework in Frameworks */,
 				63F3327E141114620077A24C /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,9 +76,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6344BE3A146FF059005A0D4D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				6344BE3B146FF059005A0D4D /* artnet */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		6344BE3B146FF059005A0D4D /* artnet */ = {
+			isa = PBXGroup;
+			children = (
+				6344BE3C146FF059005A0D4D /* artnet.c */,
+				6344BE3D146FF059005A0D4D /* artnet.h */,
+				6344BE3E146FF059005A0D4D /* common.h */,
+				6344BE3F146FF059005A0D4D /* config.h */,
+				6344BE40146FF059005A0D4D /* misc.c */,
+				6344BE41146FF059005A0D4D /* misc.h */,
+				6344BE42146FF059005A0D4D /* network.c */,
+				6344BE43146FF059005A0D4D /* packets.h */,
+				6344BE44146FF059005A0D4D /* private.h */,
+				6344BE45146FF059005A0D4D /* receive.c */,
+				6344BE46146FF059005A0D4D /* tod.c */,
+				6344BE47146FF059005A0D4D /* tod.h */,
+				6344BE48146FF059005A0D4D /* transmit.c */,
+			);
+			path = artnet;
+			sourceTree = "<group>";
+		};
 		63F3326E141114620077A24C = {
 			isa = PBXGroup;
 			children = (
+				6344BE4F14701342005A0D4D /* AVFoundation.framework */,
 				63F332C01412605A0077A24C /* icon.icns */,
 				63F33283141114620077A24C /* Ambilight */,
 				63F3327C141114620077A24C /* Frameworks */,
@@ -97,10 +145,9 @@
 		63F33283141114620077A24C /* Ambilight */ = {
 			isa = PBXGroup;
 			children = (
+				6344BE3A146FF059005A0D4D /* Vendor */,
 				63F332A614113FCA0077A24C /* AsyncSocket.h */,
 				63F332A714113FCB0077A24C /* AsyncSocket.m */,
-				63F332A814113FCB0077A24C /* NetIOConnection.h */,
-				63F332A914113FCB0077A24C /* NetIOConnection.m */,
 				63F3328F141114620077A24C /* AmbilightAppDelegate.h */,
 				63F33290141114620077A24C /* AmbilightAppDelegate.m */,
 				63F33292141114620077A24C /* MainMenu.xib */,
@@ -150,6 +197,9 @@
 /* Begin PBXProject section */
 		63F33270141114620077A24C /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
 			buildConfigurationList = 63F33273141114620077A24C /* Build configuration list for PBXProject "Ambilight" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -190,8 +240,13 @@
 				63F33291141114620077A24C /* AmbilightAppDelegate.m in Sources */,
 				63F332A414112F870077A24C /* Screen.m in Sources */,
 				63F332AA14113FCB0077A24C /* AsyncSocket.m in Sources */,
-				63F332AB14113FCB0077A24C /* NetIOConnection.m in Sources */,
 				63F332BE14124AF90077A24C /* ColorView.m in Sources */,
+				6344BE49146FF059005A0D4D /* artnet.c in Sources */,
+				6344BE4A146FF059005A0D4D /* misc.c in Sources */,
+				6344BE4B146FF059005A0D4D /* network.c in Sources */,
+				6344BE4C146FF059005A0D4D /* receive.c in Sources */,
+				6344BE4D146FF059005A0D4D /* tod.c in Sources */,
+				6344BE4E146FF059005A0D4D /* transmit.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +295,16 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "Vendor/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "Vendor/**";
 			};
 			name = Debug;
 		};
@@ -260,21 +317,29 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "Vendor/**";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "Vendor/**";
 			};
 			name = Release;
 		};
 		63F33298141114620077A24C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ambilight/Ambilight-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					HAVE_CONFIG_H,
+				);
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Ambilight/Ambilight-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -284,8 +349,11 @@
 		63F33299141114620077A24C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ambilight/Ambilight-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "Ambilight/Ambilight-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

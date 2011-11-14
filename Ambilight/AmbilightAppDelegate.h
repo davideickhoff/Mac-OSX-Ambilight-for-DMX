@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 #import "Screen.h"
-#import "NetIOConnection.h"
 #import "ColorView.h"
 
 @interface AmbilightAppDelegate : NSObject <NSApplicationDelegate> {
@@ -26,6 +25,8 @@
     NSTextField *brightFactorTextField;
     NSTextField *satFactorTextField;
     ColorView *colorView;
+    ColorView *colorView_right;
+    ColorView *colorView_left;
     
     NSSlider *redSlider;
     NSSlider *greebSlider;
@@ -49,7 +50,6 @@
     
     BOOL useLog;
     
-    NetIOConnection *connection;
     NSTextField* label;
     
 }
@@ -69,6 +69,9 @@
 @property (nonatomic, retain) IBOutlet NSTextField *brightFactorTextField;
 @property (nonatomic, retain) IBOutlet NSTextField *satFactorTextField;
 @property (nonatomic, retain) IBOutlet ColorView *colorView;
+@property (nonatomic, retain) IBOutlet ColorView *colorView_right;
+@property (nonatomic, retain) IBOutlet ColorView *colorView_left;
+
 
 @property (nonatomic, retain) IBOutlet NSSlider *redSlider;
 @property (nonatomic, retain) IBOutlet NSSlider *greebSlider;
@@ -92,7 +95,6 @@
 
 @property (assign) BOOL useLog;
 
-@property (nonatomic, retain) NetIOConnection *connection;
 @property (nonatomic, retain) IBOutlet NSTextField* label;
     
 - (IBAction)changeScreen:(id)sender;
